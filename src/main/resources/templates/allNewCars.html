@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All cars</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Nr.</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Model</th>
+      <th scope="col">Body type</th>
+      <th scope="col">Color</th>
+      <th scope="col">Fuel type</th>
+      <th scope="col">Gearbox</th>
+      <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <div>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <th>1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+
+      <div th:each="el : ${allNewCarsList}">
+        <tr>
+          <th scope="row">1</th>
+          <th th:text = "${el.}"></th>
+        </tr>
+      </div>
+
+    </div>
+
+    </tbody>
+    </table>
+<body>
+
+</body>
+</html>
